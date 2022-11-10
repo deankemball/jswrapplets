@@ -2,11 +2,11 @@
 
 ## 1 create a navigation bar
 
-target the unordered list element of the document and replace the placeholder text with list elements corresponding to the provided array `navLinks`
+target the unordered list element of the document and insert list elements corresponding to the provided array `navLinks`
 
 ## 2 style the buttons
 
-target the list elements you just created and add the button styling to them.
+target the list elements you just created and add the `.button` class to them.
 
 ## 3 contact form
 
