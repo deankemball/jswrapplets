@@ -19,3 +19,7 @@ create a button element and append it to the form. write a function that gathers
 ### optional
 
 use a `confirm()` instead of `alert()` and allow the user to go back and edit form fields before re-submitting.
+
+## 5 shop item cards
+
+write a function to create a card component for each of the items of the `shopData` array. using the existing css, display the relevant information for each item as per the example screenshot.
