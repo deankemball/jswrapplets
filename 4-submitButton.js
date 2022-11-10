@@ -6,8 +6,7 @@ submitButton.innerText = "submit message";
 
 formField.appendChild(submitButton);
 
-function handleOnSubmit(event) {
-  event.preventDefault();
+function handleOnSubmit() {
   const userNameValue = document.querySelector("input[name='userName']").value;
   const userEmailValue = document.querySelector(
     "input[name='userEmail']"
@@ -21,12 +20,23 @@ function handleOnSubmit(event) {
 
   const alertMessage = `
   your have entered the following information:
-  name: ${userNameValue}
-  email: ${userEmailValue}
-  message: ${userMessageValue}
+
+    name: ${userNameValue}
+    email: ${userEmailValue}
+    message: ${userMessageValue}
+
   is this correct?
   `;
-  alert(alertMessage);
+
+  if (confirm(alertMessage)) {
+    alert("thank you. message sent");
+    formField.reset();
+  } else {
+    alert("please correct your information and re-submit");
+  }
 }
 
-submitButton.onSubmit = (event) => handleOnSubmit(event);
+formField.onsubmit = (event) => {
+  event.preventDefault();
+  handleOnSubmit();
+};

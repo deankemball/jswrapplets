@@ -33,6 +33,7 @@ const formElement = document.querySelector("#contactForm");
 function createContactForm(parent, formFieldsEntries) {
   for (let i = 0; i < formFieldsEntries.length; i++) {
     const input = document.createElement("input");
+    input.required = true;
     const label = document.createElement("label");
     const key = formFieldsEntries[i][0];
     const value = formFieldsEntries[i][1];

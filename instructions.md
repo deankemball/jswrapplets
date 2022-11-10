@@ -14,4 +14,8 @@ on the contact page create a concact form with the fields corresponding to the `
 
 ## 4 submit button
 
-create a button element and append it to the form. write a function that gathers the data of the form and displays an alert in the browser, showing the data that was just submitted
+create a button element and append it to the form. write a function that gathers the data of the form and displays an `alert()` in the browser, showing the data that was just submitted.
+
+### optional
+
+use a `confirm()` instead of `alert()` and allow the user to go back and edit form fields before re-submitting.
