@@ -6,7 +6,8 @@ submitButton.innerText = "submit message";
 
 formField.appendChild(submitButton);
 
-function handleOnSubmit() {
+function handleOnSubmit(event) {
+  event.preventDefault();
   const userNameValue = document.querySelector("input[name='userName']").value;
   const userEmailValue = document.querySelector(
     "input[name='userEmail']"
@@ -25,6 +26,7 @@ function handleOnSubmit() {
   message: ${userMessageValue}
   is this correct?
   `;
+  alert(alertMessage);
 }
 
-submitButton.onSubmit = handleOnSubmit;
+submitButton.onSubmit = (event) => handleOnSubmit(event);
