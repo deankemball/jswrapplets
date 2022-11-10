@@ -23,3 +23,11 @@ use a `confirm()` instead of `alert()` and allow the user to go back and edit fo
 ## 5 shop item cards
 
 write a function to create a card component for each of the items of the `shopData` array. using the existing css, display the relevant information for each item as per the example screenshot.
+
+## 6 bullets
+
+create a button that when clicked, places a circle at a random position on the screen.
+
+### optional
+
+play the sound effects provided when the button is clicked
