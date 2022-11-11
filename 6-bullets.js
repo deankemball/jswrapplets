@@ -20,11 +20,9 @@ function createBulletHole(event) {
   bulletHole.style.left = `${positionX}px`;
   bulletHole.style.top = `${positionY}px`;
 
-  const glass = new Audio("/sounds/bulletOnGlass.mp3");
   const shells = new Audio("/sounds/shellsOnGround.mp3");
 
   body.appendChild(bulletHole);
-  glass.play();
   shells.play();
 }
 
